@@ -35,12 +35,13 @@
 	<script type="application/ld+json">
 	{
 	"@context": "https://schema.org",
-	"@type": "LocalBusiness",
+	"@type": "ProfessionalService",
 	"name": "Nina Carducci",
 	"image": "https://www.ninacarducci.fr/assets/images/og-image.jpg",
 	"@id": "https://www.ninacarducci.fr",
 	"url": "https://www.ninacarducci.fr",
 	"telephone": "+33556677889",
+	"priceRange": "$$", //  Ajout car champ manquant pour Rich Snippet !
 	"address": {
 		"@type": "PostalAddress",
 		"streetAddress": "68 avenue Alsace-Lorraine",
@@ -67,7 +68,8 @@
 	},
 	"sameAs": [
 		"https://www.instagram.com/ninacarducci.photo/?hl=fr"
-	]
+	],
+  	"description": "Photographe spécialisée dans les portraits et les événements à Bordeaux." // ajout de la description pour être complet pour Audit RICH Snippet
    }
 
 	</script>
@@ -112,7 +114,7 @@
 			<span class="visually-hidden">Previous</span>
 		</button>
 		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>width="1200" height="800" 
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>  <!-- Suppresion pour le contrast :width="1200" height="800" pour WAVE-->
 			<span class="visually-hidden">Next</span>
 		</button>
 	</div>
@@ -132,15 +134,15 @@
 	<h3 class="title">Portfolio</h3>
 	<div class="container py-3">
 		<div class="gallery" style="display: none">
-			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash2.jpg" alt="concerts" loading="lazy" width="400" height="400" /> <!-- Chaque image compressée, alt descriptif et lazy loading --> <!-- Modification : optimisation des balises <img> avec width, height -->
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash2.jpg" alt="entreprise" loading="lazy" width="400" height="400" />
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash2.jpg" alt="entreprise" loading="lazy"width="400" height="400" />
-			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash2.jpg" alt="mariage" loading="lazy" width="400" height="400" />
-			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash2.jpg" alt="portraits" loading="lazy" width="400" height="400" />
-			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash2.jpg" alt="mariage" loading="lazy" width="400" height="400" />
-			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash2.jpg" alt="portraits"loading="lazy" width="400" height="400" />
-			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash2.jpg" alt="concerts" loading="lazy" width="400" height="400" />
-			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash2.jpg" alt="entreprise" loading="lazy" width="400" height="400" />
+			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash2.jpg" alt="concerts" loading="lazy" width="200" height="200" /> <!-- Chaque image compressée, alt descriptif et lazy loading --> <!-- Modification : optimisation des balises <img> avec width, height -->
+			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash2.jpg" alt="entreprise" loading="lazy" width="200" height="200"  />
+			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash2.jpg" alt="entreprise" loading="lazy"width="200" height="200"  />
+			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash2.jpg" alt="mariage" loading="lazy" width="200" height="200"  />
+			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash2.jpg" alt="portraits" loading="lazy" width="200" height="200"  />
+			<img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash2.jpg" alt="mariage" loading="lazy" width="200" height="200"  />
+			<img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash2.jpg" alt="portraits"loading="lazy" width="200" height="200"  />
+			<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash2.jpg" alt="concerts" loading="lazy" width="200" height="200"  />
+			<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash2.jpg" alt="entreprise" loading="lazy" width="200" height="200"  />
 		</div>
 	</div>
 	<section class="quote"><!-- modification: div en section-->
@@ -205,9 +207,9 @@
 			<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
 
 
-			<!--  Section HTML mise à jour avec les microdonnées Schema.org pour améliorer ton référencement local, -->
+			<!--  Section HTML mise à jour avec les microdonnées Schema.org pour améliorer  le référencement local, -->
 			<div itemscope itemtype="https://schema.org/LocalBusiness">
-				<meta itemprop="@type" content="Photographer">
+				<!--<meta itemprop="type" content="Photographer">-->
 				<meta itemprop="name" content="Nina Carducci">
 				<p itemprop="description">Photographe portraits & événementiel</p>
 
@@ -215,9 +217,11 @@
 				<meta itemprop="streetAddress" content="68 avenue Alsace-Lorraine">
 				<meta itemprop="postalCode" content="33200">
 				<meta itemprop="addressLocality" content="Bordeaux">
+				<meta itemprop="addressCountry" content="FR"><!--Ajout champ addressCountry car manquant pour Rich Snippets-->
+				
 				<p><strong>Adresse :</strong> 68 avenue Alsace-Lorraine, 33200 Bordeaux</p>
 				</div>
-
+				<meta itemprop="priceRange" content="$$"><!--Ajout champ priceRange car manquant pour Rich Snippets-->
 				<p><strong>Téléphone :</strong> <span itemprop="telephone">05 56 67 78 89</span></p>
 				<p><strong>Horaires :</strong> 
 				<span itemprop="openingHours" content="Mo-Fr 10:00-19:00">Lundi au vendredi, 10h à 19h</span>
